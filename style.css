@@ -3,7 +3,8 @@ body{
     width: 100%;
     height: 100vh;
     display: grid;
-    place-items:center
+    place-items:center;
+    counter-reset:game;
 }
 
 
@@ -20,7 +21,7 @@ body{
 .layer-1 {
     position: absolute;
     z-index: 1;
-    height: 453px;
+    height: 469px;
     width: 80px;
     right: 58px;
     bottom: 13px;
@@ -29,6 +30,7 @@ body{
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
+
 @keyframes layer {
     0%{
         bottom: 13px;
@@ -42,7 +44,7 @@ body{
 
 }
 
-.layer-1 input[type=checkbox]{
+.layer-1 input[type=checkbox]{          /**/
 appearance: none;
 cursor: pointer;
 height:50%;
@@ -52,14 +54,47 @@ top:0px;
 width: 80px;
 z-index: 2;
 }
+
+.layer-2 input[type=checkbox]{          /**/
+    appearance: none;
+    cursor: pointer;
+    height:50%;
+    margin: 0px;
+    position: relative;
+    top:0px;
+    width: 80px;
+    z-index: 2;
+    }
+
+    .layer-4 input[type=checkbox]{          /**/
+        appearance: none;
+        cursor: pointer;
+        height:50%;
+        margin: 0px;
+        position: relative;
+        top:0px;
+        width: 80px;
+        z-index: 2;
+        }
+    .layer-6 input[type=checkbox]{          /**/
+        appearance: none;
+        cursor: pointer;
+        height:50%;
+        margin: 0px;
+        position: relative;
+        top:0px;
+        width: 80px;
+        z-index: 2;
+        }
+
 input[type=checkbox]:focus{
     appearance: none;
     outline:none;
 }
-
-input:checked{
-    counter-increment: score;
+.count::before{
+    content:counter(game);
 }
+
 .score::after{
     content: counter(score);
 }
@@ -68,7 +103,7 @@ input:checked{
 .layer-2{
     position: absolute;
     z-index: 2;
-    height: 466px;
+    height: 469px;
     width: 80px;
     bottom: 0px;
     left: 59px;
@@ -393,12 +428,8 @@ input:checked{
     width: 306px;
     height: 82px;
     background: #BFF;
-    background: linear-gradient(top, #BFF 5%, #DFF 100%);
     background: -webkit-linear-gradient(top, #FFF 1%, #BFF 100%);
-    background: -moz-linear-gradient(top, #BFF 5%, #DFF 100%);
-    background: -ms-linear-gradient(top, #BFF 5%, #DFF 100%);
-    background: -o-linear-gradient(top, #BFF 5%, #DFF 100%);
-    top: 397px;
+    top: 299px;
     left: -3px;
     border-radius: 100px;
     position: absolute;
@@ -422,11 +453,12 @@ input:checked{
     width: 104px;
     height: 58px;
     background: green;
-    top: 421px;
+    top: 323px;
     left: 197px;
     border-radius: 100px;
     position: absolute;
-    margin: 120px auto 20px;}
+    margin: 120px auto 20px 
+}
 
 
 /**/
@@ -446,9 +478,11 @@ input:checked{
     width: 120px;
     height: 63px;
     background: green;
-    top: 417px;
+    top: 320px;
     left: 1px;
     border-radius: 100px;
     position: absolute;
-    margin: 120px auto 20px;
+    margin: 120px auto 20px
 }
+
+
