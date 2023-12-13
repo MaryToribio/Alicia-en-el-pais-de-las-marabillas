@@ -330,7 +330,7 @@ input[type=checkbox]:focus{
     align-items: center;
     position: absolute;
     width: 100%;
-    height: 18vh;
+    height: 28vh;
     background: #8c6750;
     top: 13%;
   }
@@ -359,7 +359,7 @@ input[type=checkbox]:focus{
     align-items: center;
     position: absolute;
     width: 100%;
-    height: 12vh;
+    height: 45vh;
     background: #8c6750;
     top: 16%;
 }
@@ -388,7 +388,7 @@ input[type=checkbox]:focus{
     align-items: center;
     position: absolute;
     width: 100%;
-    height: 8vh;
+    height: 26vh;
     background: #8c6750;
     top: 22%;
   }
@@ -453,11 +453,11 @@ input[type=checkbox]:focus{
     width: 104px;
     height: 58px;
     background: green;
-    top: 323px;
-    left: 197px;
+    top: 306px;
+    left: 195px;
     border-radius: 100px;
     position: absolute;
-    margin: 120px auto 20px 
+    margin: 120px auto 20px;
 }
 
 
@@ -478,17 +478,17 @@ input[type=checkbox]:focus{
     width: 120px;
     height: 63px;
     background: green;
-    top: 320px;
-    left: 1px;
+    top: 301px;
+    left: 4px;
     border-radius: 100px;
     position: absolute;
-    margin: 120px auto 20px
+    margin: 120px auto 20px;
 }
 h3{
     font-size: 12px;
     display:block;
     margin-left: 3px;
-    margin-right: 3px;
+    margin-right: ;
 
 }
 
