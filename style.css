@@ -343,6 +343,7 @@ input[type=checkbox]:focus{
                 linear-gradient(-45deg, #8c6750 50%, transparent 50%);
     background-size: 30px 30px;
     content: '';
+
   }
 
   .muro5{
